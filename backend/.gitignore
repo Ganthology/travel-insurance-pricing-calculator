@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and databases
+*.log
+*.db
+*.sqlite3
+
+# Local development configuration
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+.venv/
+.venv37/
+.env/
+.env37/
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Miscellaneous
+*.bak
+*.swp
+*.tmp
+.DS_Store
+
