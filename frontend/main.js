@@ -1,14 +1,4 @@
-// export function handleFormSubmission(e) {
-//   e.preventDefault()
-//   try {
-//     console.log(e)
-
-//   } catch (error) {
-//     console.error(error)
-//   }
-// }
-
-async function testSubmit() {
+async function submitForm() {
   const departureDate = document.querySelector('#departure-date').value;
   const returnDate = document.querySelector('#return-date').value;
   const plan = document.querySelector('input[name="plan"]:checked').value;
@@ -53,12 +43,14 @@ async function testSubmit() {
     .then((response) => response.json())
     .then((data) => {
       if (data.price) {
+        // Update the dom to display the price
         document.querySelector('#price').innerHTML = `$ ${data.price}`;
         document.querySelector('#departure-date-error').innerHTML = '';
         document.querySelector('#return-date-error').innerHTML = '';
         document.querySelector('#plan-error').innerHTML = '';
         return;
       } else {
+        // Display error message
         alert(`Error: ${data.detail[0].msg}`);
       }
     });
