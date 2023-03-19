@@ -15,5 +15,9 @@
 3. Run the web app locally by running `npm run dev` command
 4. Backend is using the `5173` port, located at `http://localhost:5173`
 
+### Tech Stack
+Backend: FastAPI (Python3)
+Frontend: HTML + VanillaJS + ViteJS
 ### Improvements to be done
 - Write test cases to validate the premium calculation
+- Host the solution on cloud
